@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad</title>
+    <!-- CDN: jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- CDN: bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- CDN: google fonts - montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- archivo CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="#">Ciberseguridad</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="amenazas.html">Amenazas Cómunes</a>
+                        <a class="nav-link" href="consejos.html">Consejos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="consejos" class="container">
+            <div class="row">
+                <div class="col-8">
+
+                    <h2 class="mt-4">Buenas tácticas de ciberseguridad</h2>
+                    <ul>
+                        <li>
+                            <h4 class="mt-3">Formación sobre concienciación en materia de seguridad</h4>
+                            <p>La formación sobre concienciación en materia de seguridad ayuda a los usuarios a comprender cómo las acciones aparentemente inofensivas (desde el uso de la misma contraseña simple para varios inicios de sesión hasta compartir en exceso en redes sociales) aumentan su propio riesgo de ataque o el de su organización.</p>
+                            
+                            <p>En combinación con políticas de seguridad de datos bien pensadas, la formación sobre concienciación en materia de seguridad puede ayudar a los empleados a proteger los datos confidenciales personales y de la organización. También puede ayudarles a reconocer y evitar ataques de phishing y malware.</p>
+                        </li>
+                        <li>
+                            <h4 class="mt-3">Herramientas de seguridad de datos</h4>
+                            <p>Las herramientas de seguridad de datos, como las soluciones de cifrado y prevención de pérdida de datos (DLP), pueden ayudar a detener las amenazas de seguridad en curso o mitigar sus efectos. Por ejemplo, las herramientas DLP pueden detectar y bloquear los intentos de robo de datos, mientras que el cifrado puede hacer que cualquier dato que los piratas informáticos roben sea inútil para ellos.</p>
+                            
+                        </li>
+                        <li>
+                            <h4 class="mt-3">Gestión de identidades y accesos</h4>
+                            <p>La gestión de identidades y accesos (IAM) hace referencia a las herramientas y estrategias que controlan cómo acceden los usuarios a los recursos y qué pueden hacer con esos recursos.</p>
+                            
+                            <p>Las tecnologías de IAM pueden ayudar a protegerse contra el robo de cuentas. Por ejemplo, la autenticación multifactor requiere que los usuarios proporcionen varias credenciales para iniciar sesión, lo que significa que los actores de amenazas necesitan algo más que una contraseña para acceder a una cuenta.</p>
+                        </li>   
+                    </ul>
+                </div>
+            </div>      
+        </section>
+        <section id="formulario-info" class="container mt-5 p-4">
+            <h3>Suscríbete para recibir más información y actualizaciones de ciberseguridad.</h3>
+            <form id="formulario">
+                <div class="mb-3">
+                  <label for="InputEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="Check">
+                  <label class="form-check-label" for="Check">Acepto recibir información y los términos de envío.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
