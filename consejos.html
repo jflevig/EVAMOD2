@@ -21,7 +21,7 @@
         <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="#">Ciberseguridad</a>
+                <a class="navbar-brand fw-bold text-primary" href="index.html">Ciberseguridad</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,9 +35,10 @@
         </nav>
     </header>
     <main>
+        <!-- Contenido: Consejos y buenas prácticas para ciberseguridad -->
         <section id="consejos" class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-md-8">
 
                     <h2 class="mt-4">Buenas tácticas de ciberseguridad</h2>
                     <ul>
@@ -62,7 +63,16 @@
                 </div>
             </div>      
         </section>
-        <section id="formulario-info" class="container mt-5 p-4">
+        <!-- Contenido: Cuestionario de ciberseguridad -->
+        <section id="test" class="container bg-primary mt-4 text-white px-5 py-3 rounded">
+            <h4>Cuestionario de Ciberseguridad</h4>
+            <p>Contesta un pequeño cuestionario para medir tus conocimientos sobre ciberseguridad haciendo</p> 
+            <div>
+                <button type="button" id="test-btn" class="btn btn-outline-light">Click Aquí</button>
+            </div>
+        </section>
+        <!-- Contenido: Formulario para suscribción para información adicional -->
+        <section id="formulario-info" class="container mt-4 p-4">
             <h3>Suscríbete para recibir más información y actualizaciones de ciberseguridad.</h3>
             <form id="formulario">
                 <div class="mb-3">
@@ -75,6 +85,101 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
+        </section>
+        <!-- Modal: Cuestionario -->
+        <section id="form-modal">
+            <div class="modal-card">
+                <span class="close">x</span>
+                <h4>Cuestionario ciberseguridad</h4>
+                <form id="test-form" action="#" method="post">
+                    <div class="mt-3" id="pregunta 1">
+                        <p><strong>¿Cuál es el riesgo principal de utilizar la misma constraseña en varios servicios?</strong></p>
+                        <div>
+                            <input type="radio" name="pregunta1" value="respuesta1" id="respuesta11">
+                            <label for="respuesta11">Solo el riesgo de olvidar la contraseña</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta1" value="respuesta2" id="respuesta12">
+                            <label for="respuesta12">Que al comprometer una cuenta, todas las demás queden expuestas</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta1" value="respuesta3" id="respuesta13">
+                            <label for="respuesta13">Que el sistema bloquee todas las cuentas</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta1" value="respuesta4" id="respuesta14">
+                            <label for="respuesta14">Que se pierdan los datos almacenados</label>
+                        </div>
+                    </div>
+                    <div class="mt-3" id="pregunta 2">
+                        <p><strong>¿Cuál es una forma efectiva de verificar si un correo electrónico sospechoso es legítimo?</strong></p>
+                        <div>
+                            <input type="radio" name="pregunta2" value="respuesta1" id="respuesta21">
+                            <label for="respuesta21">Responder pidiendo más información</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta2" value="respuesta2" id="respuesta22">
+                            <label for="respuesta22">Hacer clic en el enlace y revisar si funciona</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta2" value="respuesta3" id="respuesta23">
+                            <label for="respuesta23">Revisar el dominio del remitente y no interactuar si parece falso</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta2" value="respuesta4" id="respuesta24">
+                            <label for="respuesta24">Reenviarlo a tus contactos para ver si alguien más lo recibió</label>
+                        </div>
+                    </div>
+                    <div class="mt-3"id="pregunta 3">
+                        <p><strong>¿Qué es la autenticación en dos pasos (2FA)?</strong></p>
+                        <div>
+                            <input type="radio" name="pregunta3" value="respuesta1" id="respuesta31">
+                            <label for="respuesta31">Usar dos contraseñas diferentes para una misma cuenta</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta3" value="respuesta2" id="respuesta32">
+                            <label for="respuesta32">Usar una contraseña seguida de una pregunta secreta</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta3" value="respuesta3" id="respuesta33">
+                            <label for="respuesta33">Verificar tu identidad con dos métodos distintos, como contraseña + código en el celular</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta3" value="respuesta4" id="respuesta34">
+                            <label for="respuesta34">Iniciar sesión desde dos dispositivos distintos al mismo tiempo</label>
+                        </div>
+                    </div>
+                    <div class="mt-3"id="pregunta 4">
+                        <p><strong>¿Qué hace un ransomware cuando infecta un dispositivo?</strong></p>
+                        <div>
+                            <input type="radio" name="pregunta4" value="respuesta1" id="respuesta41">
+                            <label for="respuesta41">Roba las contraseñas del navegador</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta4" value="respuesta2" id="respuesta42">
+                            <label for="respuesta42">Borra automáticamente todos los archivos del sistema</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta4" value="respuesta3" id="respuesta43">
+                            <label for="respuesta43">Monitorea el uso del teclado</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pregunta4" value="respuesta4" id="respuesta44">
+                            <label for="respuesta44">Cifra los archivos y exige un pago para recuperarlos</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary">Completar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- Modal: Mensaje con resultados-->
+        <section id="test-msg">
+            <div class="test-card">
+                <span class="close">x</span>
+                <span id="msg"></span>
+            </div>
         </section>
     </main>
     <script src="scripts.js"></script>
